@@ -18,6 +18,10 @@ h2 {
   margin-bottom: 1em;
 }
 
+h3 {
+  color: #483D8B;
+}
+
 a {
   color: #483D8B;
 }
@@ -31,4 +35,16 @@ a {
 }
 .contact__type {
   min-width: 90px;
+}
+
+.experience {
+  display: flex;
+  margin-bottom: 2em;
+}
+.experience__date {
+  min-width: 185px;
+  margin-bottom: 1em;
+}
+.experience__name {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

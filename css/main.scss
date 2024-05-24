@@ -21,6 +21,10 @@ h2 {
     margin-bottom: 1em;
 }
 
+h3 {
+    color: $primary-color;
+}
+
 a {
     color: $primary-color;
 }
@@ -34,5 +38,18 @@ a {
 
     &__type {
         min-width: 90px;
+    }
+}
+
+.experience {
+    display: flex;
+    margin-bottom: 2em;
+    &__date {
+        min-width: 185px;
+        margin-bottom: 1em;
+
+    }
+    &__name {
+        font-weight: bold;
     }
 }
