@@ -37,6 +37,10 @@ a {
   min-width: 90px;
 }
 
+.section {
+  margin-bottom: 3em;
+}
+
 .experience {
   display: flex;
   margin-bottom: 2em;
@@ -47,4 +51,15 @@ a {
 }
 .experience__name {
   font-weight: bold;
+}
+
+.resume {
+  max-width: 900px;
+  margin: auto;
+}
+
+@media (max-width: 575px) {
+  .experience {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

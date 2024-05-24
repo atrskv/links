@@ -41,6 +41,10 @@ a {
     }
 }
 
+.section {
+    margin-bottom: 3em;
+}
+
 .experience {
     display: flex;
     margin-bottom: 2em;
@@ -51,5 +55,16 @@ a {
     }
     &__name {
         font-weight: bold;
+    }
+}
+
+.resume {
+    max-width: 900px;
+    margin: auto;
+}
+
+@media (max-width: 575px) {
+    .experience {
+        display: block;
     }
 }
