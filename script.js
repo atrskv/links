@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerHeight < 845) {
+      const waveElements = document.querySelectorAll('.wave');
+      waveElements.forEach(el => el.style.display = 'none');
+    }
+  
   setTimeout(() => {
       var _animate = document.querySelectorAll(".animate");
       _animate.forEach(function (element, index) {
