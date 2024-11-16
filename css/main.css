@@ -3,31 +3,37 @@ body {
   color: #111;
   max-height: 100vh;
   padding: 7.5vw;
-  font-family: -apple-system,  'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
   font-size: 1.11rem;
   line-height: 1.85rem;
   font-weight: 375;
   transition: all 0.35s;
 }
+
 a {
   color: #111;
 }
+
 .intro {
   margin: 0 0 2.5rem;
-  h1{
+
+  h1 {
     font-size: 2.5rem;
   }
+
   h3 {
     margin: 2.5rem 0 0;
   }
 }
 
 .social {
-  margin: 0 0 2.5rem;
+  margin: 0 0 0rem;
+
   ul {
     list-style: none;
     padding: 0;
     display: flex;
+
     li {
       &:not(:last-of-type) {
         margin-right: 1rem;
@@ -35,29 +41,14 @@ a {
     }
   }
 }
+
 main {
-  @media (min-width:1200px){
-  display: flex;
+  @media (min-width:1200px) {
+    display: flex;
   }
+
   .social {
     padding-right: 5vw;
-  }
-}
-
-.projects {
-  article {
-    padding: 1rem 0;
-    &:not(:last-of-type) {
-      border-bottom: 1px solid #212121;
-    }
-    a {
-      display: flex;
-      align-items: center;
-    }
-    i,svg {
-      margin-right: 1rem;
-      font-size:2rem;
-    }
   }
 }
 
@@ -71,3 +62,60 @@ main {
     opacity: 1;
   }
 }
+
+.social {
+  margin-top: -2.5rem;
+  margin-bottom: -1rem;
+}
+
+h1 img {
+  height: 1em;
+  width: auto;
+}
+
+.wave {
+  width: 200%;
+  height: 8rem;
+  background: var(--darkest);
+  border-radius: 1000% 1000% 0 0;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: .8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  }
+  
+  .wave:nth-of-type(2) {
+  bottom: -1.25rem;
+  animation: wave 18s linear reverse infinite;
+  opacity: .8;
+  }
+  
+  .wave:nth-of-type(3) {
+  bottom: -2.5rem;
+  animation: wave 20s -1s reverse infinite;
+  opacity: .9;
+  }
+  
+  @keyframes wave {
+    2% { transform: translateX(1); }
+   25% { transform: translateX(-25%); }
+   50% { transform: translateX(-50%); }
+   75% { transform: translateX(-25%); }
+  100% { transform: translateX(1); }
+  }
+  
+  :root {
+    --akzent: #4799eb;  /* blau */
+      
+    --white: white;
+    --lightest: #ddd;   /* hover und co */
+    --lighter: #999;    /* txt */	
+    --light: #555;      /* grau time klicks */	
+    --dark: #25282c;    /* background */
+    --darker: #191c20;  /* box */
+    --darkest: #111417; /* navbar tags */	
+    --black: black;
+    }
