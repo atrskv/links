@@ -65,3 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("mode", JSON.stringify(inputElmt.checked));
   }
 });
+
