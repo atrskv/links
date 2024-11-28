@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerHeight < 845) {
-      const waveElements = document.querySelectorAll('.wave');
-      waveElements.forEach(el => el.style.display = 'none');
-    }
+    // if (window.innerHeight < 845) {
+    //   const waveElements = document.querySelectorAll('.wave');
+    //   waveElements.forEach(el => el.style.display = 'none');
+    // }
   
   setTimeout(() => {
       var _animate = document.querySelectorAll(".animate");
@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let h1Elmt = document.querySelector("h1");
   let link = document.querySelector("link[rel='icon']");
   let aElmnts = document.querySelectorAll("body a");
-  let waveElmts = document.querySelectorAll(".wave");
+  let footer = document.querySelector("footer.footer");
+
 
   if (inputElmt && bodyElmt && h1Elmt && link) {
       inputElmt.checked = JSON.parse(localStorage.getItem("mode") || "false");
@@ -37,10 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
           bodyElmt.style.color = "#fff";
           h1Elmt.textContent = "Торсуков Алексей 🥷🏻";
           link.setAttribute("href", "favicons/dark-mode.png");
+          footer.style.background = "#fff"
 
-          waveElmts.forEach(el => {
-              el.style.background = "var(--white)";
-          });
           aElmnts.forEach(el => {
               el.style.color = "#fff";
           });
@@ -50,10 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
           bodyElmt.style.color = "#111";
           h1Elmt.textContent = "Торсуков Алексей 👨🏻‍💻";
           link.setAttribute("href", "favicons/light-mode.png");
+          footer.style.background = "#111"
 
-          waveElmts.forEach(el => {
-              el.style.background = "var(--darkest)";
-          });
+
+
 
           aElmnts.forEach(el => {
               el.style.color = "#111";
